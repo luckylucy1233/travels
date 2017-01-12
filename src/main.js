@@ -4,10 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import Router from 'vue-router'
 import router from './components/router'
-// import ElementUI from 'element-ui'
-// // import 'element-ui/lib/theme-default/index.css'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
-// Vue.use(Router,ElementUI)
+Vue.use(ElementUI)
 Vue.use(Router)
 /* eslint-disable no-new */
 new Vue({

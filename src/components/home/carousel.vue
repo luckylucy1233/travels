@@ -1,11 +1,14 @@
-"<template>
+<template>
   <div id="carousel">
-    <div v-for="(item,index) in pics" class="carimg">
-      <img :src="item" width="33.33%" height="200" alt="item.alt"/>
-    </div>
-    <!--<img :src="item.src" width="200" height="200" alt="item.alt" />-->
-    <a  id="pre" @click="pre()">pre</a>
-    <a  id="next" @click='next()'>next</a>
+    <!--carousel-->
+    <el-carousel :interval="4000" type="card" height="300px">
+      <el-carousel-item v-for="item in pics">
+        <h3>{{item.title}}</h3>
+        <el-button type="primary">{{item.lead}}</el-button>
+        <img :src="item.url" alt="mypicture" />
+      </el-carousel-item>
+      <!---->
+    </el-carousel>
   </div>
 </template>
 
@@ -16,37 +19,24 @@
   export default {
     data() {
       return {
-        // pics: [
-        // { src: require('../../assets/logo.png'), alt: 1 }, 
-        // { src: require('../../assets/bc1(1).jpeg'), alt: 2 },
-        // { src: require(  '../../assets/bc1(1).jpeg'), alt: 3 }
-        // ]
-        // index:0,
         pics: [
-        require('../../assets/logo.png'), 
-        require('../../assets/bc1(1).jpeg'),
-        require('../../assets/bc1(2).jpeg')
+          {
+            title: 1,
+            // url: require('../../assets/bc1(1).jpeg')
+            url: 'http://ojnuwcfws.bkt.clouddn.com/bc1%281%29.jpeg',
+            lead: '跟我走'
+          },
+          {
+            title: 2,
+            url: require('../../assets/bc1(2).jpeg'),
+            lead: '跟我走'
+          },
+          {
+            title: 3,
+            url: require('../../assets/bc1(3).jpeg'),
+            lead: '跟我走'
+          },
         ]
-      }
-    },
-    methods: {
-      pre: function () {
-        let myindex = 0
-        if (myindex == 0) {
-          myindex = this.pics.index
-        }
-        myindex--
-        this.img = this.pics[myindex]
-        return false
-      },
-      next: function () {
-        let myindex = 0
-        myindex ++
-        if (myindex == this.pics.length) {
-          myindex = 0;
-        }
-        this.img =this.pics[myindex]
-        return false
       }
     }
   }
@@ -55,4 +45,28 @@
 .carimg{
   display: inline;
 }
+.el-carousel__item h3 {
+  position: absolute;
+
+  }
+  .el-carousel__item{
+    /*position: relative;*/
+  }
+  .el-button{
+    position: absolute;;
+  /*color:#fff;*/
+  top:50%;
+  left:50%;
+  border-radius: 5px;
+  -webkit-transform:？(-50%,-50%);
+  -moz-transform:？(-50%,-50%);
+  transform:translate(-50%,-50%);
+  }
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 </style>
