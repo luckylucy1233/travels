@@ -3,6 +3,7 @@ import Home from '../home/home.vue'
 import Destination from '../destination/destination.vue'
 import Guides from '../guides/guides.vue'
 import AboutUs from '../aboutUs/aboutUs.vue'
+import Contract from '../contract/contract.vue'
 
 export default new Router({
   mode:'history',
@@ -18,6 +19,7 @@ export default new Router({
     { path: '/home',name:'home', component:Home, },
     { path: '/destination',name:'destination', component:Destination, },
     { path: '/guides',name:'guides', component:Guides, },
-    { path: '/aboutUs',name:'aboutUs', component:AboutUs, }
+    { path: '/aboutUs',name:'aboutUs', component:AboutUs, },
+    { path: '/contract',name:'contract', component:Contract, }
   ],
 })

@@ -33,21 +33,21 @@ export default {
   
   html {
     /*设置rem基数为10*/
-    font-size: 62.5%;
-    /*10 ÷ 16 × 100% = 62.5%*/
+      font-size: 75%;
+    /*12 ÷ 16 × 100% = 75%*/
   }
   
   body {
-    font-size: 1.4rem;
-    /*1.4 × 10px = 14px */
+    font-size: 1.167rem;
+    /*1.2 × 10px = 12px */
     margin: 0;
     padding: 0;
+    width:100%;
   }
   
-  h1 {
-    font-size: 2.4rem;
-    /*2.4 × 10px = 24px*/
-  }
+  /*h1 {
+    font-size: 1.667rem;
+  }*/
   a{
     text-decoration: none;
     color: black;
@@ -59,13 +59,13 @@ export default {
   
   .slide-left-enter {
     opacity: 0.5;
-    -webkit-transform: translate(2rem, 0);
-    transform: translate(2rem, 0);
+    -webkit-transform: translate(1.667rem, 0);
+    transform: translate(1.667rem, 0);
   }
   
   .slide-left-leave-active {
     opacity: 0;
-    -webkit-transform: translate(-3rem, 0);
-    transform: translate(-2rem, 0);
+    -webkit-transform: translate(-0.250rem, 0);
+    transform: translate(-1.667rem, 0);
   }
 </style>
