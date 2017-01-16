@@ -5,12 +5,13 @@
     <transition :name='transitionName' mode='out-in'>
       <router-view class="child-view"></router-view>
     </transition>
+    <bottom></bottom>
   </div>
 </template>
 
 <script>
 import headnav from './components/headnav'
-
+import bottom from './components/bottom'
 export default {
   name: 'app',
   data(){
@@ -19,7 +20,8 @@ export default {
     }
   },
   components: {
-    headnav
+    headnav,
+    bottom
   }
 }
 </script>
