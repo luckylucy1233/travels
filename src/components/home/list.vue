@@ -3,7 +3,7 @@
     <el-row :gutter="20">
       <el-col :span="8" v-for="item in list">
         <el-card :body-style="{ padding: '0px' }">
-          <img :src="item.src" class="image" height="200px">
+          <img :src="item.src" class="image">
           <div style="padding: 14px;">
             <span>{{item.title}}</span>
             <div class="bottom clearfix">
@@ -70,10 +70,10 @@
     font-size: 13px;
     color: #999;
   }
-  /*.image{
+  .image{
     width: 100%;
     height: 200px;
-  }*/
+  }
   .image:hover{
     opacity: .8;
     transition: all .5s ease;
