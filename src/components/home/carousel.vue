@@ -1,14 +1,18 @@
 <template>
   <div id="carousel">
     <!--carousel-->
-    <el-carousel :interval="4000" type="card" height="30rem">
-      <el-carousel-item v-for="item in pics">
-        <h3>{{item.title}}</h3>
-        <el-button type="primary">{{item.lead}}</el-button>
-        <img :src="item.url" alt="mypicture" width="100%" height="100%" />
-      </el-carousel-item>
-      <!---->
-    </el-carousel>
+    <el-row :gutter="20">
+      <el-col :span="24">
+        <el-carousel :interval="4000" type="card" height="30rem">
+          <el-carousel-item v-for="item in pics">
+            <h3>{{item.title}}</h3>
+            <el-button type="primary">{{item.lead}}</el-button>
+            <img :src="item.url" alt="mypicture" width="100%" height="100%" />
+          </el-carousel-item>
+          <!---->
+        </el-carousel>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -46,7 +50,7 @@
     }
   }
 </script>
-<style >
+<style>
 .carimg{
   display: inline;
 }
