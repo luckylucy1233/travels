@@ -44,7 +44,12 @@ export default {
     /*1.2 × 10px = 12px */
     margin: 0;
     padding: 0;
+    /*background-image: url ("http://ojnuwcfws.bkt.clouddn.com/wKgBs1f8rUGAcUxxAAgWqhdLNEc998.png");
     width:100%;
+    height: 100%;
+    background-repeat:no-repeat;
+    position: fixed;
+    z-index: -999 */
   }
   
   /*h1 {

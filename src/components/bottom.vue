@@ -42,7 +42,7 @@
           </dl>
         </div>   
       <div class="bottom-hrC">
-        <p class="bottom-p text-center">Copyright © 2016 动如脱兔 - 湘ICP备15010308号-2</p>
+        <p class="bottom-p text-center">毕业设计</p>
       </div>
     </div>
   </div>

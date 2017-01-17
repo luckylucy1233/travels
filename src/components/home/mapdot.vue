@@ -124,12 +124,11 @@
       -moz-animation-delay: 0s;
       /*动画延迟时间*/
     }
-    .dot1:after{
-      animation-delay: 0.4s;
-      -webkit-animation-delay: 0.4s;
-      -moz-animation-delay: 0.4s;
-      /*动画延迟时间*/
-    }
+    /*.dot1:after{
+      animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+    }*/
     .dot:after ,.dot1:after{
       content: '';
       position: absolute;
@@ -165,7 +164,24 @@
       0% {
         left: 0.417rem;
         top: 0.417rem;
-        opcity: 75;
+        opacity: 0.75;
+        width: 0;
+        height: 0;
+      }
+      100% {
+        left: -1.667rem;
+        top: -1.667rem;
+        opacity: 0;
+        width: 4.167rem;
+        height: 4.167rem;
+      }
+    }
+        
+    @-moz-keyframes ripple {
+      0% {
+        left: 0.417rem;
+        top: 0.417rem;
+        opacity: 0.75;
         width: 0;
         height: 0;
       }
