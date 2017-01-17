@@ -2,14 +2,6 @@
   <div id="list">
     <el-row :gutter="20">
       <el-col :span="8" v-for="item in list">
-        <!--<el-card :body-style="{ padding: '0px' }">-->
-        <!--<img :src="item.src" class="image">
-          <div style="padding: 14px;">
-            <span>{{item.title}}</span>
-            <div class="bottom clearfix">
-              <time class="time">{{ currentDate }}</time>
-            </div>
-          </div>-->
         <figure class="test1">
           <img :src="item.src" />
           <figcaption>
@@ -19,7 +11,6 @@
           </figcaption>
          
         </figure>
-        <!--</el-card>-->
       </el-col>
     </el-row>
   </div>

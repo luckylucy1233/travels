@@ -9,7 +9,6 @@
             <el-button type="primary">{{item.lead}}</el-button>
             <img :src="item.url" alt="mypicture" width="100%" height="100%" />
           </el-carousel-item>
-          <!---->
         </el-carousel>
       </el-col>
     </el-row>
