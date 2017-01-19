@@ -9,8 +9,8 @@
       <el-col :span="12">
         <ul>
           <li class="myli" v-for="item in links" 
-          :class="{'active': $route.name === item.routeName }">
-            <router-link :to="item.name">
+          :class="{'active': $route.name === item.routeName ||$route.name === item.name}">
+            <router-link :to="item.routeName ">
               {{item.title}}
             </router-link>
           </li>
@@ -36,27 +36,27 @@
         links: [
           {
             title: '首页',
-            name: 'home',
+            // name: 'home',
             routeName: 'home'
           },
           {
             title: '目的地',
-            name: 'destination',
-            routeName: 'destination'
+            name: '',
+            routeName: 'destination',
           },
           {
             title: '攻略',
-            name: 'guides',
+            // name: 'guides',
             routeName: 'guides'
           },
           {
             title: '关于我们',
-            name: 'aboutUs',
+            // name: 'aboutUs',
             routeName: 'aboutUs'
           },
           {
             title: '反馈与建议',
-            name: 'contract',
+            // name: 'contract',
             routeName: 'contract'
           },
         ]

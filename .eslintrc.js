@@ -66,6 +66,7 @@ module.exports = {
     "no-unreachable": 1,
     "no-cond-assign": 1,
     "comma-dangle": 0,
+    "allowMultiplePropertiesPerLine": 0 ,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
