@@ -8,8 +8,7 @@
       </el-col>
       <el-col :span="12">
         <ul>
-          <li class="myli" v-for="item in links" 
-          :class="{'active': $route.name === item.routeName ||$route.name === item.name}">
+          <li class="myli" v-for="item in links" :class="{'active': $route.name === item.name}">
             <router-link :to="item.routeName ">
               {{item.title}}
             </router-link>
@@ -21,7 +20,9 @@
       </el-col>
       <el-col :span="3">
         <div class="sign">
+          <router-link to='/login'>
           登陆 | 注册
+          </router-link>
         </div>
       </el-col>
     </el-row>
@@ -29,40 +30,45 @@
 </template>
 
 <script>
+  // import router from './path/to/router'
   export default {
     name: 'head',
     data() {
       return {
-        links: [
-          {
+        links: [{
             title: '首页',
-            // name: 'home',
-            routeName: 'home'
+            name: 'home',
+            routeName: '/home'
           },
-          {
-            title: '目的地',
-            name: '',
-            routeName: 'destination',
-          },
+          // {
+          //   title: '目的地',
+          //   name: 'destination',
+          //   routeName: '/destination',
+          // },
           {
             title: '攻略',
-            // name: 'guides',
-            routeName: 'guides'
+            name: 'guides',
+            routeName: '/guides'
           },
+          // {
+          //   title: '反馈与建议',
+          //   name: 'contract',
+          //   routeName: '/contract'
+          // },
           {
+            title: '个人中心',
+            name: 'personal',
+            routeName: '/personal'
+          },{
             title: '关于我们',
-            // name: 'aboutUs',
-            routeName: 'aboutUs'
-          },
-          {
-            title: '反馈与建议',
-            // name: 'contract',
-            routeName: 'contract'
+            name: 'aboutUs',
+            routeName: '/aboutUs'
           },
         ]
       }
-    }
+    },
   }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -104,12 +110,14 @@
     height: 2.500rem;
     font-size: 1.333rem;
   }
-  .active{
+  
+  .active {
     border-bottom: 0.083rem solid #ff9d00;
   }
-  .active a{
-    border-bottom-color:#ff9d00;
-    color:#ff9d00;
+  
+  .active a {
+    border-bottom-color: #ff9d00;
+    color: #ff9d00;
   }
   /*.icon {
     margin-left: 6.667rem;
@@ -123,4 +131,5 @@
     color: #ff9d00;
     background-color: transparent;
   }
+
 </style>

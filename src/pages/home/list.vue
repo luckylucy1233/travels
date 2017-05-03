@@ -23,19 +23,19 @@
         currentDate: new Date(),
         list: [
           {
-            src: 'http://ojnuwcfws.bkt.clouddn.com/wKgBs1fvDHOABdeeAA0LbpCeePY41.jpeg',
+            src: 'https://c3-q.mafengwo.net/s9/M00/80/08/wKgBs1fp1weADbaOAA15PBZKTKE49.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
             title: '中国'
           },
           {
-            src: 'http://ojnuwcfws.bkt.clouddn.com/wKgBs1f8rUGAcUxxAAgWqhdLNEc998.png',
+            src: 'https://c1-q.mafengwo.net/s10/M00/46/BE/wKgBZ1h4Vm2AYDa1ACNzEJyxcYY11.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
             title: '马尔代夫'
           },
           {
-            src: 'http://ojnuwcfws.bkt.clouddn.com/wKgBs1hSSHaAGRskAAchJrFFufw38.jpeg',
+            src: 'https://n3-q.mafengwo.net/s10/M00/9B/D3/wKgBZ1iGuuSAdzXIAC97pN3dN2c94.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
             title: '新西兰'
           },
           {
-            src: 'http://ojnuwcfws.bkt.clouddn.com/wKgBZ1h3RNuAZBjgAAYAmFj5raI74.jpeg',
+            src: 'https://a2-q.mafengwo.net/s10/M00/45/82/wKgBZ1h4Uw2AKbisACjVPMIhrio09.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
             title: '欧洲'
           },
           {

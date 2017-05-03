@@ -3,10 +3,10 @@
     <!--carousel-->
     <el-row :gutter="20">
       <el-col :span="24">
-        <el-carousel :interval="4000" type="card" height="30rem">
+        <el-carousel :interval="4000" type="card" >
           <el-carousel-item v-for="item in pics">
             <h3>{{item.title}}</h3>
-            <el-button type="primary">{{item.lead}}</el-button>
+            <!--<el-button type="primary">{{item.lead}}</el-button>-->
             <img :src="item.url" alt="mypicture" width="100%" height="100%" />
           </el-carousel-item>
         </el-carousel>
@@ -26,30 +26,30 @@
           {
             title: 1,
             // url: require('../../assets/bc1(1).jpeg')
-            url: 'http://ojnuwcfws.bkt.clouddn.com/wKgBs1aJXTCAQNwPAA7KEL2-Sk430%20%281%29.jpeg',
-            lead: '跟我走'
+            url:'https://c3-q.mafengwo.net/s9/M00/80/08/wKgBs1fp1weADbaOAA15PBZKTKE49.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
+            // lead: '跟我走'
           },
           {
             title: 2,
-            url: 'http://ojnuwcfws.bkt.clouddn.com/wKgBs1Zvpk-AHpesAA_e8Hiz31Q92.jpeg',
-            lead: '跟我走'
+            url: 'https://c1-q.mafengwo.net/s10/M00/46/BE/wKgBZ1h4Vm2AYDa1ACNzEJyxcYY11.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
+            // lead: '跟我走'
           },
           {
             title: 3,
-            url: 'http://ojnuwcfws.bkt.clouddn.com/wKgBs1fvDHOABdeeAA0LbpCeePY41.jpeg',
-            lead: '跟我走'
+            url: 'https://n3-q.mafengwo.net/s10/M00/9B/D3/wKgBZ1iGuuSAdzXIAC97pN3dN2c94.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
+            // lead: '跟我走'
           },
           {
             title: 3,
-            url: 'http://ojnuwcfws.bkt.clouddn.com/bc1%281%29.jpeg',
-            lead: '跟我走'
+            url: 'https://a2-q.mafengwo.net/s10/M00/45/82/wKgBZ1h4Uw2AKbisACjVPMIhrio09.jpeg?imageView2%2F2%2Fw%2F680%2Fq%2F90',
+            // lead: '跟我走'
           },
         ]
       }
     }
   }
 </script>
-<style>
+<style scoped>
 .carimg{
   display: inline;
 }

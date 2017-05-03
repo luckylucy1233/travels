@@ -1,67 +1,68 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
-    <headnav></headnav>
+    <!--<headnav></headnav>-->
     <transition :name='transitionName' mode='out-in'>
       <router-view class="child-view"></router-view>
     </transition>
-    <bottom></bottom>
+    <!--<bottom></bottom>-->
   </div>
 </template>
 
 <script>
-import headnav from './components/headnav'
-import bottom from './components/bottom'
-export default {
-  name: 'app',
-  data(){
-    return{
-      transitionName:'slide-left'
+  import headnav from './components/headnav'
+  import bottom from './components/bottom'
+  export default {
+    name: 'app',
+    data() {
+      return {
+        transitionName: 'slide-left'
+      }
+    },
+    components: {
+      headnav,
+      bottom
+    },
+    methods: {
+
     }
-  },
-  components: {
-    headnav,
-    bottom
   }
-}
+
 </script>
 
 <style>
   #app {
-    font-family: "Microsoft Yahei",Arial,"Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-family: "Microsoft Yahei", Arial, "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width:100%;
+    height: 100%;
   }
   
   html {
     /*设置rem基数为10*/
-      font-size: 75%;
+    font-size: 75%;
     /*12 ÷ 16 × 100% = 75%*/
+     width:100%;
+    height: 100%;
   }
   
   body {
-    font-size: 1.167rem;
+    /*font-size: 1.167rem;*/
     /*1.2 × 10px = 12px */
     margin: 0;
     padding: 0;
-    /*background-image: url ("http://ojnuwcfws.bkt.clouddn.com/wKgBs1f8rUGAcUxxAAgWqhdLNEc998.png");
     width:100%;
     height: 100%;
-    background-repeat:no-repeat;
-    position: fixed;
-    z-index: -999 */
   }
-  
-  /*h1 {
-    font-size: 1.667rem;
-  }*/
-  a{
+
+  a {
     text-decoration: none;
     color: black;
   }
   /*路由过度效果样式*/
+  
   .child-view {
-    transition: all .5s cubic-bezier(.55, 0, .1, 1);
+    transition: all .3s cubic-bezier(.55, 0, .1, 1);
   }
   
   .slide-left-enter {
@@ -75,4 +76,5 @@ export default {
     -webkit-transform: translate(-0.250rem, 0);
     transform: translate(-1.667rem, 0);
   }
+
 </style>

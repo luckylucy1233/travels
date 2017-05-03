@@ -1,7 +1,7 @@
 <template>
   <div class="map">
     <h1>那些年我们走过的地方</h1>
-    <img src="../../assets/map.png" />
+    <img src="../../assets/map.png" width="100%"/>
     <div class="dot SanFrancisco">
       <p>San Francisco</p>
     </div>
